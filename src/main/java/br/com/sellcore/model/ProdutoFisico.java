@@ -9,6 +9,7 @@ public class ProdutoFisico extends Produto{
         super(idProduto,nome,precoBase);
         this.pesoGrama = pesoGrama;
         this.quantidadeEstoque = quantidadeEstoque;
+
     }
     public int getPesoGrama() {
         return pesoGrama;
@@ -29,6 +30,7 @@ public class ProdutoFisico extends Produto{
     @Override
     public double calcularPrecoFinal(){
         return getPrecoBase()+(getPesoGrama() * 0.02);
+    }
+
 
     }
-}
